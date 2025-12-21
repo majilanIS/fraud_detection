@@ -2,6 +2,7 @@
 # Data & Outputs
 # ======================
 data/*.csv
+data/*
 results/
 temp/
 logs/*.log
