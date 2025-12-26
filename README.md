@@ -72,6 +72,26 @@ fraud-detection/
 
 ---
 
+---
+
+## Task 2: Model Building and Training
+
+- Built and evaluated machine learning models to detect fraudulent transactions.
+- **Baseline model**: Logistic Regression with `class_weight="balanced"` for handling class imbalance.
+- **Ensemble model**: Random Forest with hyperparameter tuning (`n_estimators`, `max_depth`) to improve performance.
+- **Evaluation metrics**:
+  - **F1-Score** – balances precision and recall, suitable for imbalanced data.
+  - **AUC-PR (Average Precision)** – measures model performance for rare events like fraud.
+  - **Confusion Matrix** – visual inspection of correct/incorrect predictions.
+- **Stratified train-test split** used to preserve the class distribution.
+- **Cross-validation (StratifiedKFold, k=5)** applied to estimate reliable model performance, reporting mean and standard deviation of metrics across folds.
+- Model comparison performed side-by-side, selecting the best model based on both **performance metrics** and **interpretability**.
+- Additional analysis:
+  - Random Forest **feature importance** visualization to understand influential features.
+- The best performing model is ready for downstream tasks, including explainability and deployment.
+
+---
+
 ## Author
 
 Chekole Majilan  
